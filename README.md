@@ -43,6 +43,26 @@ Scanr is a powerful and flexible command-line tool for searching text patterns i
 
 ---
 
+### Make Scanr Available System-wide (Like `grep` on Linux)
+
+To use `scanr` from any command prompt window, add its folder to your system `PATH`:
+
+1. **Build `scanr.exe`** as shown above.
+2. **Copy `scanr.exe`** to a folder of your choice (e.g., `C:\Tools\scanr`).
+3. **Add the folder to your Windows `PATH`:**
+   - Press <kbd>Win</kbd> + <kbd>R</kbd>, type `sysdm.cpl`, and press <kbd>Enter</kbd>.
+   - Go to the **Advanced** tab and click **Environment Variables**.
+   - Under **System variables**, select `Path` and click **Edit**.
+   - Click **New** and enter the path to the folder containing `scanr.exe` (e.g., `C:\Tools\scanr`).
+   - Click **OK** to close all dialogs.
+4. **Open a new Command Prompt** and type:
+   ```
+   scanr --help
+   ```
+   If you see the usage message, `scanr` is now available system-wide.
+
+---
+
 ## Usage
 
 ### Basic Syntax
